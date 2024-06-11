@@ -47,11 +47,18 @@ Cuando instalamos el directorio activo podemos decir que nuestro servidor es un 
 1. Abrir la ventana ejecutar o con el comando teclas Windows+R, y escribir <b>dcpromo</b>
 2. Cuando cargue, seguiremos el paso a paso de la instalación para <b>Crear dominio nuevo en bosque nuevo</b>
 3. Lo llamaremos midominio.com y seleccionamos siguiente
-4. Seleccionaremos Windows server 2003  continuaremos con la el paso a paso de instalación.
+4. Seleccionaremos Windows server 2003 continuaremos con la el paso a paso de instalación.
 5. Al reiniciar la maquina virtual podemos ver el dominio al inicio de la sesión.
 
 #### Verificación del DNS
 
 1. Ir a <b>Inicio > Herramientas Administrativas > Usuarios y equipos de Active Directory</b> para poder comprobar el dominio que hemos creado
 2. Ahora vamos a nuestro dominio creado 'midominio.com' y accedemos a la carpeta <b>Users</b> donde crearemos un usuario.
-3. Proveemos la información que nos solicita y aceptamos para crear el nuevo usuario. (contraseña ejemplo: 12345678*a)
+3. Proveemos la información que nos solicita y aceptamos para crear el nuevo usuario. (contraseña ejemplo: 12345678\*a)
+
+### Activación de usuarios
+
+1. Generar otras maquinas virtuales con Windows, siempre y cuando no sea Windows Server.
+2. Ir a <b>Explorador de Archivos</b> y dar click derecho sobre <b>equipo</b>, luego click en <b>Propiedades > Nombre de equipo</b>.
+3. Cambiar el nombre del equipo por el nombre de usuario creado en Windows Server y establecer el dominio como el que hemos creado (midominio.com).
+4. Una vez hecho esto, ingresar la contraseña solicitada para que se reinicie Windows y quede exitosamente conectado al directorio activo.
